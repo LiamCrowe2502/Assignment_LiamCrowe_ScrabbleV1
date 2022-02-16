@@ -2,7 +2,7 @@ class ScrabbleScore {
 
     fun scoreWord(word: String): Int{
         //Calculate using the scoreLetter method below, the scrabble value of the word passed as a parameter
-        //https://dnight.tistory.com/entry/Exercism-Scrabble-Score-WithKotlin - Link to help
+        //Reference: https://dnight.tistory.com/entry/Exercism-Scrabble-Score-WithKotlin
         //return word.toCharArray().map { scoreLetter(it) }.sum()
         return word.sumOf { scoreLetter(it) }
         //sumBy was there before sumOf but kotlin wanted me to change it
